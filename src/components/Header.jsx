@@ -2,6 +2,8 @@ import React from "react";
 
 class Header extends React.Component {
   render() {
+    const linkedin = 'https://www.linkedin.com/in/felipe-seabra'
+
     return (
       <header>
         <div className="background">
@@ -36,7 +38,7 @@ class Header extends React.Component {
                 </li>
               </ul>
             </div>
-            <a target="_blank" className="btn d-none d-lg-block link-linkedin" href="#about">
+            <a target="_blank" className="btn d-none d-lg-block" href={linkedin} rel="noreferrer">
               Linkedin
             </a>
           </nav>
