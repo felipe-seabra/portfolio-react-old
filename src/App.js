@@ -8,7 +8,9 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <Header />
+        <header className="fixed-top">
+          <Header />
+        </header>
         <main id="about">
           <Content />
         </main>
