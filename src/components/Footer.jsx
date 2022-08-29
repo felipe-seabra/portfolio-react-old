@@ -7,9 +7,9 @@ class Footer extends React.Component {
     const github = "https://github.com/felipe-seabra";
 
     return (
-      <footer>
+      <footer className="fixed-bottom">
         {/* <h6>Felipe Seabra</h6> */}
-        <p>Para mais informações - clique nos links abaixo</p>
+        {/* <p>Para mais informações - clique nos links abaixo</p> */}
         <div className="Redes-sociais">
           <a target="_blank" href={github} rel="noreferrer">
             <i className="fab fa-github"></i>
