@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import image from "./images/image.jpg";
+import Content from "./components/Content";
+import Footer from "./components/Footer"
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <BrowserRouter>
         <Header />
-        {/* <About image={image} />
-        <Footer /> */}
-      </div>
+        <Content />
+        <Footer />
+      </BrowserRouter>
     );
   }
 }

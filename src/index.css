@@ -31,7 +31,7 @@ code {
   text-align: right;
 }
 
-.background .logo {
+header .logo {
   color: #fff;
   font-size: 35px;
   cursor: pointer;
@@ -324,7 +324,7 @@ body footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-color: #101010;
 }
 
@@ -338,7 +338,7 @@ body footer p {
   font-size: 15px;
   width: 100%px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 2px;
   letter-spacing: 1px;
   line-height: 23px;
 }
@@ -353,7 +353,7 @@ body footer p {
   height: 45px;
   padding: 15px;
   border-radius: 50%;
-  margin: 22px 10px;
+  margin: 5px 10px;
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -371,7 +371,7 @@ body footer p {
 footer .end {
   position: absolute;
   color: #dc143c;
-  bottom: 35px;
+  bottom: 5px;
   font-size: 14px;
 }
 

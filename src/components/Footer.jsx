@@ -8,7 +8,7 @@ class Footer extends React.Component {
 
     return (
       <footer>
-        <h6>Felipe Seabra</h6>
+        {/* <h6>Felipe Seabra</h6> */}
         <p>Para mais informações - clique nos links abaixo</p>
         <div className="Redes-sociais">
           <a target="_blank" href={github} rel="noreferrer">

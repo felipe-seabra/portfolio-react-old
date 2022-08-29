@@ -1,15 +1,15 @@
 import React from "react";
+// import image from "./images/image.jpg";
 class About extends React.Component {
   render() {
     const linkedin = "https://www.linkedin.com/in/felipe-seabra";
-    const { image } = this.props;
 
     return (
       <main id="about">
         <section className="background-color-Sobre">
           <div className="container">
             <div className="main-sobre row">
-              <img className="picture img-fluid" src={image} alt="Foto Felipe Seabra" />
+              {/* <img className="picture img-fluid" src={image} alt="Foto Felipe Seabra" /> */}
               <div className="Text-sobre mt-3">
                 <h2>Sobre Mim</h2>
 
