@@ -232,16 +232,9 @@ header h5 {
 }
 
 .card-body {
-  background-color: #191919;
+  background-color: #101010;
   height: 95%;
   padding: 1.08rem;
-}
-
-.card2-body {
-  background-color: #101010;
-  color: #fff;
-  width: 98%;
-  margin-top: 10px;
 }
 
 .card-title {
@@ -256,7 +249,7 @@ header h5 {
   margin: 5px;
 }
 
-.card-img-top {
+.card .card-img-top {
   width: 105%;
 }
 
