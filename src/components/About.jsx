@@ -5,7 +5,7 @@ class About extends React.Component {
     const linkedin = "https://www.linkedin.com/in/felipe-seabra";
 
     return (
-      <section className="background-color-Sobre">
+      <section className="background-color-grey">
         <div className="container">
           <div className="main-sobre row">
             <img className="picture img-fluid" src={image} alt="Foto Felipe Seabra" />
