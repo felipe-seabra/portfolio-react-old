@@ -20,21 +20,21 @@ const Header = (props) => {
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink>
-                <Link to="/">
+                <Link to="/" style={{textDecoration: 'none'}}>
                   Home<span className="sr-only"></span>
                 </Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/about">
+                <Link to="/about" style={{textDecoration: 'none'}}>
                   Sobre
                 </Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/projects">
+                <Link to="/projects" style={{textDecoration: 'none'}}>
                   Projetos
                 </Link>
               </NavLink>
