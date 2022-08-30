@@ -38,6 +38,10 @@ header .logo {
   letter-spacing: 1px;
 }
 
+header .logo:hover {
+  color: #fff;
+}
+
 .bg-navbar {
   background: #101010;
 }
