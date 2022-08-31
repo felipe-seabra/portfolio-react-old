@@ -1,5 +1,5 @@
 import pixelArt from "../images/projects/background-pixels-art.png";
-import shoppingCart from "../images/projects/background-shopping-cart"
+import shoppingCart from "../images/projects/background-shopping-cart.png"
 import criarte from "../images/projects/background-criarte-profissionalizante.png";
 
 const data = [
