@@ -2,12 +2,8 @@ import React from "react";
 import Loading from "./Loading";
 
 export default class Card extends React.Component {
-  state = {
-    loading: true,
-  };
   render() {
-    const { name, image, description, url } = this.props;
-    const { loading } = this.state;
+    const { name, image, description, url, loading } = this.props;
     return (
       <div className="card">
         {loading ? (
