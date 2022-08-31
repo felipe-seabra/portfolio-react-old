@@ -9,7 +9,7 @@ export default class Projects extends React.Component {
 
   handleGetProjects = async () => {
     <Card loading={loading} />;
-    await data.map((card) => <Card image={card.image} name={card.name} description={card.description} url={card.url} />);
+    await data.map((card) => <Card image={card.image} name={card.name} description={card.description} url={card.url} loading={true} />);
   };
   render() {
     return (
