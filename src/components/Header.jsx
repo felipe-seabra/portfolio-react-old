@@ -1,26 +1,7 @@
-<<<<<<< HEAD
-import React from "react";
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
-} from 'reactstrap';
-=======
+
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, NavbarText } from "reactstrap";
->>>>>>> 53bbfa0cfc088202b822921c500af7563386cd54
 
 const Header = (props) => {
   const linkedin = "https://www.linkedin.com/in/felipe-seabra";
