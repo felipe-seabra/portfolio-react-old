@@ -3,11 +3,11 @@ import Loading from "./Loading";
 
 export default class Card extends React.Component {
   render() {
-    const { name, image, description, url, loading } = this.props;
+    const { name, image, description, url, isLoaded } = this.props;
     return (
       <div className="card">
-        {loading ? (
-          <Loading />
+        {!isLoaded ? (
+          <Loading />               
         ) : (
           <div className="card-bg">
             <img className="card-img-top" src={image} alt={name} />
