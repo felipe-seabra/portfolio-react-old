@@ -7,6 +7,7 @@ export default class Card extends React.Component {
   };
   render() {
     const { name, image, description, url } = this.props;
+    const { loading } = this.state;
     return (
       <div className="card">
         {loading ? (
