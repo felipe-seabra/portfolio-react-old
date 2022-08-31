@@ -11,13 +11,13 @@ class Footer extends React.Component {
         {/* <h6>Felipe Seabra</h6> */}
         {/* <p>Para mais informações - clique nos links abaixo</p> */}
         <div className="Redes-sociais">
-          <a target="_blank" href={github} rel="noreferrer">
+          <a target="_blank" href={github} rel="noreferrer" style={{textDecoration: 'none'}}>
             <i className="fab fa-github"></i>
           </a>
-          <a target="_blank" href={linkedin} rel="noreferrer">
+          <a target="_blank" href={linkedin} rel="noreferrer" style={{textDecoration: 'none'}}>
             <i className="fab fa-linkedin"></i>
           </a>
-          <a target="_blank" href={instagram} rel="noreferrer">
+          <a target="_blank" href={instagram} rel="noreferrer" style={{textDecoration: 'none'}}>
             <i class="fab fa-instagram"></i>
           </a>
         </div>

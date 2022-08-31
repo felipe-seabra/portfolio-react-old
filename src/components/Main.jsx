@@ -13,7 +13,7 @@ export default class Main extends React.Component {
           <h3>
             Sou estudante de desenvolvimento web na
             <strong>
-              <a className="trybe" href="https://www.betrybe.com/" target="_blank" rel="noreferrer">
+              <a className="trybe" href="https://www.betrybe.com/" target="_blank" rel="noreferrer" style={{textDecoration: 'none'}}>
                 Trybe
               </a>
             </strong>

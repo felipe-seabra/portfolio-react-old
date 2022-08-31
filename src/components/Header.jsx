@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
@@ -15,49 +16,57 @@ import {
     DropdownItem,
     NavbarText
 } from 'reactstrap';
+=======
+import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, NavbarText } from "reactstrap";
+>>>>>>> 53bbfa0cfc088202b822921c500af7563386cd54
 
-class Header extends React.Component {
-  render() {
-    const linkedin = "https://www.linkedin.com/in/felipe-seabra";
+const Header = (props) => {
+  const linkedin = "https://www.linkedin.com/in/felipe-seabra";
 
-    return (
-      <nav className="navbar navbar-expand-md container-fluid">
-        <h2 className="logo navbar-brand">
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div>
+      <Navbar className="container-fluid" expand="md">
+        <NavbarBrand className="logo">
           Portfó<span>lio</span>
-        </h2>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-felipe" aria-controls="nav-felipe" aria-expanded="false" aria-label="Alterna navegação">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse justify-content-center" id="nav-felipe">
-          <ul className="cabeçalho-link navbar-nav">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Home<span className="sr-only"></span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link">
-                Sobre
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/projects" className="nav-link">
-                Projetos
-              </Link>
-            </li>
-            {/* <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                  Contato
-                </a>
-              </li> */}
-          </ul>
-        </div>
-        <a target="_blank" className="btn d-none d-lg-block" href={linkedin} rel="noreferrer">
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink>
+                <Link to="/" style={{textDecoration: 'none'}}>
+                  Home<span className="sr-only"></span>
+                </Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <Link to="/about" style={{textDecoration: 'none'}}>
+                  Sobre
+                </Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <Link to="/projects" style={{textDecoration: 'none'}}>
+                  Projetos
+                </Link>
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <NavbarText><a target="_blank" className="btn d-none d-lg-block" href={linkedin} rel="noreferrer">
           Linkedin
-        </a>
-      </nav>
-    );
-  }
-}
+        </a></NavbarText>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+};
 
 export default Header;
