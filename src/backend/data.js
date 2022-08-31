@@ -18,7 +18,7 @@ const data = [
   },
   {
     name: "Projeto Trybewarts",
-    image: shoppingCart,
+    image: trybewarts,
     description: "Projeto de desenvolvimento de formulário da Escola de Magia de Trybewarts. 🧙🪄⚡",
     url: "https://github.com/felipe-seabra/Trybe-project-trybewarts",
   },
