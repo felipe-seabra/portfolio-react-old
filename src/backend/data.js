@@ -1,5 +1,6 @@
 import pixelArt from "../images/projects/background-pixels-art.png";
 import shoppingCart from "../images/projects/background-shopping-cart.png"
+import trybewarts from "../images/projects/background-project-trybewarts.png"
 import criarte from "../images/projects/background-criarte-profissionalizante.png";
 
 const data = [
@@ -14,6 +15,12 @@ const data = [
     image: shoppingCart,
     description: "Projeto de desenvolvimento de um carrinho de compras utilizando a API do Mercado Livre. 🛒💻📱",
     url: "https://github.com/felipe-seabra/Trybe-project-shopping-cart",
+  },
+  {
+    name: "Projeto Trybewarts",
+    image: shoppingCart,
+    description: "Projeto de desenvolvimento de formulário da Escola de Magia de Trybewarts. 🧙🪄⚡",
+    url: "https://github.com/felipe-seabra/Trybe-project-trybewarts",
   },
   {
     name: "Página Colégio Criarte",
