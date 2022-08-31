@@ -12,30 +12,30 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar className="container-fluid" expand="md">
+      <Navbar collapseOnSelect className="container-fluid" expand="md">
         <NavbarBrand className="logo">
           Portfó<span>lio</span>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <NavbarToggler onClick={toggle} aria-controls="responsive-navbar-nav" />
+        <Collapse isOpen={isOpen} navbar id="responsive-navbar-nav">
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink>
-                <Link to="/" style={{textDecoration: 'none'}}>
-                  Home<span className="sr-only"></span>
+                <Link to="/" style={{textDecoration: 'none'}} onClick={toggle}>
+                  Home
                 </Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/about" style={{textDecoration: 'none'}}>
+                <Link to="/about" style={{textDecoration: 'none'}} onClick={toggle}>
                   Sobre
                 </Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/projects" style={{textDecoration: 'none'}}>
+                <Link to="/projects" style={{textDecoration: 'none'}} onClick={toggle}>
                   Projetos
                 </Link>
               </NavLink>
