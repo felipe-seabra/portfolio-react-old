@@ -8,10 +8,9 @@ export default class Projects extends React.Component {
   };
 
   componentDidMount() {
-    setTimeout(async() => {
-      await this.setState({isLoaded: true});
-    },1000)
-    
+    setTimeout(async () => {
+      await this.setState({ isLoaded: true });
+    }, 1000);
   }
 
   render() {
