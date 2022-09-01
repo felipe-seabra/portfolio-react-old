@@ -10,18 +10,16 @@ export default class Projects extends React.Component {
           <h2>Meus Projetos</h2>
         </div>
         <div className="card-box">
-          {
-            data.map((card) => 
-              <Card
-                key={card.name}
-                image={card.image} 
-                name={card.name} 
-                description={card.description} 
-                url={card.url} 
-                isLoaded={true} 
-              />
-            )
-          }
+          {data.map((card) => (
+            <Card
+              key={card.name}
+              image={card.image}
+              name={card.name}
+              description={card.description}
+              url={card.url}
+              isLoaded={true}
+            />
+          ))}
         </div>
       </div>
     );
