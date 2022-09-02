@@ -1,9 +1,17 @@
 import pixelArt from "../images/projects/background-pixels-art.png";
+import tryunfo from "../images/projects/background-project-tryunfo.png";
 import shoppingCart from "../images/projects/background-shopping-cart.png";
 import trybewarts from "../images/projects/background-project-trybewarts.png";
 import criarte from "../images/projects/background-criarte-profissionalizante.png";
 
 const data = [
+  {
+    name: "Tryunfo",
+    image: tryunfo,
+    description:
+      "Projeto de desenvolvimento de um jogo no estilo Super Trunfo podendo criar cartas de qualquer tema. 😃🃏🃏🃏",
+    url: "https://github.com/felipe-seabra/Trybe-project-tryunfo",
+  },
   {
     name: "Shopping Cart",
     image: shoppingCart,
