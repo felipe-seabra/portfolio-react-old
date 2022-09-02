@@ -18,10 +18,10 @@ class Footer extends React.Component {
             <i className="fab fa-linkedin"></i>
           </a>
           <a target="_blank" href={instagram} rel="noreferrer" style={{textDecoration: 'none'}}>
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </a>
         </div>
-        <p class="end">Felipe S. - &copy; 2022</p>
+        <p className="end">Felipe S. - &copy; 2022</p>
       </footer>
     );
   }
