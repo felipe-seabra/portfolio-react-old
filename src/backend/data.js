@@ -9,7 +9,7 @@ const data = [
     name: "Tryunfo",
     image: tryunfo,
     description:
-      "Projeto de desenvolvimento de um jogo no estilo Super Trunfo podendo criar cartas de qualquer tema. 😃🃏🃏🃏",
+      "Projeto de desenvolvimento de um jogo no estilo Super Trunfo podendo criar cartas de qualquer tema. 😃🃏🃏",
     url: "https://github.com/felipe-seabra/Trybe-project-tryunfo",
   },
   {
