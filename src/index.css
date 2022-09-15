@@ -33,7 +33,7 @@ header .logo:hover {
   color: #fff;
 }
 
- nav .navbar-toggler-icon {
+nav .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
@@ -66,18 +66,18 @@ header .navlink:hover {
 }
 
 body .btn {
-  background-color: #dc143c;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 25px;
-  transition: transform 0.4s;
+  background-color: #dc143c !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: 2px solid transparent !important;
+  font-weight: bold !important;
+  padding: 10px 25px !important;
+  border-radius: 25px !important;
+  transition: transform 0.4s !important;
 }
 
-.btn:hover {
-  transform: scale(1.1);
+body .btn:hover {
+  transform: scale(1.1) !important;
 }
 
 
@@ -133,21 +133,20 @@ body h3 {
   height: auto;
 }
 
-.Text-sobre {
+main .Text-sobre {
   width: 550px;
 }
 
-.main-sobre {
+main .main-sobre {
   align-items: center;
   justify-content: space-around;
-
   margin: 10% auto;
 }
 
 main .picture {
   max-width: 350px;
   border-radius: 20px;
-  box-shadow: 3px 3px #0d1b2a;
+  box-shadow: 3px 3px #dc143c;
 }
 
 .Text-sobre h2 {
