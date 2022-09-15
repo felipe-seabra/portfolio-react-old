@@ -17,8 +17,6 @@ class About extends React.Component {
                 experiência atuando em diversas áreas de tecnologia em educação.
               </p>
               <p>
-                <br />
-                <br />
                 Apesar de hoje me identificar mais com o <strong>Front-end</strong>, vejo
                 que não há nada que eu não consiga <em>fazer/aprender</em>.
               </p>
