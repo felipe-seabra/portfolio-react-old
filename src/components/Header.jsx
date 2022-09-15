@@ -1,55 +1,32 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarText,
-} from "reactstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "../index.css";
 
-const Header = () => {
+function Header() {
   const linkedin = "https://www.linkedin.com/in/felipe-seabra";
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
   return (
-    <div>
-      <Navbar className="container-fluid" expand="md">
-        <NavbarBrand className="logo">
-          Portfó<span>lio</span>
-        </NavbarBrand>
-        <NavbarToggler onClick={toggle} aria-controls="responsive-navbar-nav" />
-        <Collapse isOpen={isOpen} navbar id="responsive-navbar-nav">
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink>
-                <Link to="/" style={{ textDecoration: "none" }} onClick={toggle}>
-                  Home
-                </Link>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>
-                <Link to="/about" style={{ textDecoration: "none" }} onClick={toggle}>
-                  Sobre
-                </Link>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>
-                <Link to="/projects" style={{ textDecoration: "none" }} onClick={toggle}>
-                  Projetos
-                </Link>
-              </NavLink>
-            </NavItem>
+    <header className="fixed-top">
+      <Navbar collapseOnSelect className="container-fluid" expand="md">
+        <Navbar.Brand>
+          <Link to="/" className="logo" style={{ textDecoration: "none" }}>
+            Portfó<span>lio</span>
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse navbar id="responsive-navbar-nav">
+          <Nav className="container justify-content-center me-auto">
+            <Nav.Link as={Link} to="/" href="/" className="navlink">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about" href="/about" className="navlink">
+              Sobre
+            </Nav.Link>
+            <Nav.Link as={Link} to="/projects" href="/projects" className="navlink">
+              Projetos
+            </Nav.Link>
           </Nav>
-          <NavbarText>
+          <Navbar.Text>
             <a
               target="_blank"
               className="btn d-none d-lg-block"
@@ -58,11 +35,11 @@ const Header = () => {
             >
               Linkedin
             </a>
-          </NavbarText>
-        </Collapse>
+          </Navbar.Text>
+        </Navbar.Collapse>
       </Navbar>
-    </div>
+    </header>
   );
-};
+}
 
 export default Header;

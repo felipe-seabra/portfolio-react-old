@@ -8,10 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
-        <header className="fixed-top">
+      <BrowserRouter>    
           <Header />
-        </header>
         <main id="about">
           <Content />
         </main>
