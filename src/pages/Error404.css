@@ -86,7 +86,7 @@ html, body{
 
 .navbar-links{
     display: inline-block;
-    float: right;
+    /* float: right; */
     margin-right: 15px;
     text-transform: uppercase;
     
@@ -208,9 +208,9 @@ li a:hover {
 */
 }
 
-.earth-moon{
+/* .earth-moon{
     
-}
+} */
 
 .object_astronaut{
     animation: rotate-astronaut 200s infinite linear both alternate;
