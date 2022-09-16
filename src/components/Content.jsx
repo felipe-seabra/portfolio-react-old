@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route, } from "react-router-dom";
-import Main from "./Main";
-import About from "./About";
-import Projects from "./Projects";
-import Error404 from "./Error404";
+import Main from "../pages/Main";
+import About from "../pages/About";
+import Projects from "../pages/Projects";
+import Error404 from "../pages/Error404";
 
 export default class Content extends React.Component {
   render() {

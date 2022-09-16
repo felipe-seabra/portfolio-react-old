@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Projects.module.css'
-import Card from "./Card";
+import Card from "../components/Card";
 import data from "../backend/data";
 
 export default class Projects extends React.Component {
