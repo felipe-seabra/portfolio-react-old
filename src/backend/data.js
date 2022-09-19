@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import pixelArt from '../images/projects/background-pixels-art.png';
 import tryunfo from '../images/projects/background-project-tryunfo.png';
 import shoppingCart from '../images/projects/background-shopping-cart.png';
