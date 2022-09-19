@@ -13,7 +13,7 @@ export default class Main extends React.Component {
             <span id="animate-flicker">|</span>
           </h1>
           <h3>
-            Sou estudante de desenvolvimento web na
+            Sou estudante de desenvolvimento web na&nbsp;
             <strong>
               <a className="trybe" href="https://www.betrybe.com/" target="_blank" rel="noreferrer" style={ { textDecoration: 'none' } }>
                 Trybe
