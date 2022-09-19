@@ -19,9 +19,10 @@ class About extends React.Component {
               </p>
               <p>
                 Apesar de hoje me identificar mais com o
+                {' '}
                 <strong>Front-end</strong>
-                , vejo que não há
-                nada que eu não consiga
+                , vejo que não há nada que eu não consiga
+                {' '}
                 <em>fazer/aprender</em>
                 .
               </p>
