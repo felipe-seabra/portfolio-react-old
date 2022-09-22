@@ -15,30 +15,6 @@
   width: 100%;
 }
 
-/* .show {
-  text-align: right;
-} */
-
-header {
-  width: 100%;
-  padding: 0 2em 0 2em;
-}
-
-header .logo {
-  color: #fff;
-  font-size: 35px;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-
-header .logo:hover {
-  color: #fff;
-}
-
-nav .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
 body span {
   color: #dc143c;
 }
@@ -220,17 +196,6 @@ header h5 {
   width: 105%;
 }
 
-/* .Paragrafo-button {
-  color: #fff;
-  font-size: 16px;
-  line-height: 27px;
-  margin-bottom: 25px;
-} */
-
-/* .Paragrafo-button button {
-  margin-top: 25px;
-} */
-
 .me-contate {
   width: 100%;
   height: 290px;
@@ -292,12 +257,12 @@ body footer p {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  transition: transform 0.4s;
 }
 
 .Redes-sociais a:hover {
   color: #fff !important;
   transform: scale(1.2);
-  transition: 0.3s;
 }
 
 .c-loader {
@@ -317,7 +282,6 @@ body footer p {
 }
 
 footer .end {
-  /* position: absolute; */
   color: #dc143c;
   bottom: 2px;
   font-size: 14px;
@@ -406,15 +370,6 @@ footer .end {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    background-color: #101010;
-  }
-  .navbar {
-    z-index: 1;
-    border-radius: 0 0 5px 5px;
-    transition: 0.5s;
-  }
-
   .background-color-grey {
     padding-bottom: 100px;
     height: 100%;
