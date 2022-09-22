@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Loading from './Loading';
+import './Card.css';
 
 export default class Card extends React.Component {
   render() {
@@ -13,7 +14,7 @@ export default class Card extends React.Component {
           <div className="card-bg">
             <img className="card-img-top" src={ image } alt={ name } />
             <div className="card-body">
-              <h5 className="card-title">{name}</h5>
+              <h3 className="card-title">{name}</h3>
               <p className="card-text">{description}</p>
               <a href={ url } target="_blank" className="btn" rel="noreferrer">
                 Visitar Repositório

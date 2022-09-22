@@ -2,11 +2,12 @@ import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../index.css';
+import './Header.css';
 
 function Header() {
-  const linkedin = 'https://www.linkedin.com/in/felipe-seabra';
+  // const linkedin = 'https://www.linkedin.com/in/felipe-seabra';
   return (
-    <header className="fixed-top">
+    <header className="header">
       <Navbar collapseOnSelect className="container-fluid" expand="md">
         <Navbar.Brand>
           <Link to="/" className="logo" style={ { textDecoration: 'none' } }>
@@ -16,7 +17,7 @@ function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse navbar id="responsive-navbar-nav">
-          <Nav className="container justify-content-center me-auto">
+          <Nav className="container me-auto links-navbar">
             <Nav.Link as={ Link } to="/" href="/" className="navlink">
               Home
             </Nav.Link>
@@ -27,7 +28,7 @@ function Header() {
               Projetos
             </Nav.Link>
           </Nav>
-          <Navbar.Text>
+          {/* <Navbar.Text>
             <a
               target="_blank"
               className="btn d-none d-lg-block"
@@ -36,7 +37,7 @@ function Header() {
             >
               Linkedin
             </a>
-          </Navbar.Text>
+          </Navbar.Text> */}
         </Navbar.Collapse>
       </Navbar>
     </header>
