@@ -7,7 +7,7 @@ class Footer extends React.Component {
     const github = 'https://github.com/felipe-seabra';
 
     return (
-      <footer className="fixed-bottom">
+      <footer>
         {/* <h6>Felipe Seabra</h6> */}
         {/* <p>Para mais informações - clique nos links abaixo</p> */}
         <div className="Redes-sociais">

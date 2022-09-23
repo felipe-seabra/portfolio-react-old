@@ -11,7 +11,7 @@
   background-image: url(images/background-main.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 
@@ -27,7 +27,6 @@ body span {
 .trybe:hover {
   color: #036b52;
 }
-
 
 body .btn {
   background-color: #dc143c !important;
