@@ -27,6 +27,9 @@ function Header() {
             <Nav.Link as={ Link } to="/projects" href="/projects" className="navlink">
               Projetos
             </Nav.Link>
+            <Nav.Link as={ Link } to="/contact" href="/contact" className="navlink">
+              Contato
+            </Nav.Link>
           </Nav>
           {/* <Navbar.Text>
             <a
