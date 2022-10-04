@@ -3,9 +3,17 @@ import pixelArt from '../images/projects/background-pixels-art.png';
 import tryunfo from '../images/projects/background-project-tryunfo.png';
 import shoppingCart from '../images/projects/background-shopping-cart.png';
 import trybewarts from '../images/projects/background-project-trybewarts.png';
+import trybewallet from '../images/projects/background-trybewallet.png';
 import criarte from '../images/projects/background-criarte-profissionalizante.png';
 
 const data = [
+  {
+    name: 'Trybewallet',
+    image: trybewallet,
+    description:
+      'Projeto de desenvolvimento de uma carteira de controle de gastos com conversor de moedas. ₿',
+    url: 'https://github.com/felipe-seabra/Trybe-project-trybewallet',
+  },
   {
     name: 'Tryunfo',
     image: tryunfo,
