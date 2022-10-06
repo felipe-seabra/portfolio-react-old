@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -121,7 +122,7 @@ export default class Contact extends React.Component {
           <p className="mb-0">
             Retornaremos em breve.
           </p>
-          <Button className="mt-3" href="/">Voltar</Button>
+          <Button as={ Link } to="/" href="/" className="mt-3">Voltar</Button>
         </Alert>
       </div>
     );

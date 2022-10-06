@@ -2,7 +2,7 @@
   width: min-content;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
   transition: 0.4s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .card-box .card {
