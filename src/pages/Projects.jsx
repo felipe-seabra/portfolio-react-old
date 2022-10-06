@@ -9,7 +9,7 @@ export default class Projects extends React.Component {
   };
 
   componentDidMount() {
-    const num = 300;
+    const num = 400;
     setTimeout(async () => {
       await this.setState({ isLoaded: true });
     }, num);

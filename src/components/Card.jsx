@@ -16,7 +16,7 @@ export default class Card extends React.Component {
             <div className="card-body">
               <h3 className="card-title">{name}</h3>
               <p className="card-text">{description}</p>
-              <a href={ url } target="_blank" className="btn" rel="noreferrer">
+              <a href={ url } target="_blank" className="btn mt-2" rel="noreferrer">
                 Visitar Repositório
               </a>
             </div>
