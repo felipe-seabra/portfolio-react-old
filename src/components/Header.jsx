@@ -8,7 +8,7 @@ function Header() {
   // const linkedin = 'https://www.linkedin.com/in/felipe-seabra';
   return (
     <header className="header fixed-top">
-      <Navbar collapseOnSelect className="container-fluid" expand="md">
+      <Navbar collapseOnSelect className="container" expand="md">
         <Navbar.Brand>
           <Link to="/" className="logo" style={ { textDecoration: 'none' } }>
             Portfó
