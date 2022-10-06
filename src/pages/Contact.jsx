@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Alert from 'react-bootstrap/Alert';
 import '../styles/index.css';
-import '../styles/Contact.css';
+import '../styles/pages/Contact.css';
 
 export default class Contact extends React.Component {
   state = {
