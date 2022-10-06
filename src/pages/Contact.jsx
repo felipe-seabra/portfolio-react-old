@@ -4,8 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Alert from 'react-bootstrap/Alert';
-import '../index.css';
-import './Contact.css';
+import '../styles/index.css';
+import '../styles/Contact.css';
 
 export default class Contact extends React.Component {
   state = {
@@ -50,7 +50,7 @@ export default class Contact extends React.Component {
     const { name, email, message, sub } = this.state;
     return !sub ? (
       <div className="background-color-grey mt-3">
-        <h2 className="color-text text-center mb-5">Formulário de contato</h2>
+        <h2 className="text-center mb-5 title-form">Formulário de contato</h2>
         <Form className="container form" onSubmit={ this.sendEmail }>
           <>
             <FloatingLabel

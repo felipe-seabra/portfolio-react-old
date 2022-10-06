@@ -1,5 +1,5 @@
 import React from 'react';
-import './Error404.css';
+import '../styles/Error404.css';
 
 export default class Error404 extends React.Component {
   render() {

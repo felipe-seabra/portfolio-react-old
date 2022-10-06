@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Projects.module.css';
+import '../styles/Projects.css';
 import Card from '../components/Card';
 import data from '../backend/data';
 
@@ -19,7 +19,7 @@ export default class Projects extends React.Component {
     const { isLoaded } = this.state;
     return (
       <div className="background-color-grey container-fluid">
-        <div className={ styles.title }>
+        <div className="title">
           <h2>Meus Projetos</h2>
         </div>
         <div className="card-box">

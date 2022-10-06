@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/components/Footer.css';
 
 class Footer extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class Footer extends React.Component {
       <footer>
         {/* <h6>Felipe Seabra</h6> */}
         {/* <p>Para mais informações - clique nos links abaixo</p> */}
-        <div className="Redes-sociais">
+        <div className="social-networks">
           <a
             target="_blank"
             href={ github }

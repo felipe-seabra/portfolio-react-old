@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-max-depth */
 import React from 'react';
 import image from '../images/image.jpg';
+import '../styles/About.css';
 
 class About extends React.Component {
   render() {
@@ -9,9 +10,13 @@ class About extends React.Component {
     return (
       <section className="background-color-grey">
         <div className="container">
-          <div className="main-sobre row">
-            <img className="picture img-fluid" src={ image } alt="Foto Felipe Seabra" />
-            <div className="Text-sobre mt-3">
+          <div className="about row">
+            <img
+              className="about-picture img-fluid"
+              src={ image }
+              alt="Foto Felipe Seabra"
+            />
+            <div className="about-text mt-3">
               <h2>Sobre Mim</h2>
               <p>
                 Natural de Presidente Prudente (SP), tenho aproximadamente 10 anos de

@@ -1,0 +1,71 @@
+.card {
+  width: min-content;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+  transition: 0.4s ease;
+}
+
+.card-box .card {
+  background: #101010;
+  height: 365px;
+  width: 335px;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #dc143c;
+}
+
+header h5 {
+  color: #fff;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.card-body {
+  background-color: #101010;
+  height: 95%;
+  padding: 1.08rem;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.card-body p {
+  color: #fff;
+}
+
+.card-text {
+  margin: 5px;
+}
+
+.card .card-img-top {
+  width: 105%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 22px;
+  /* margin-top: 20px; */
+}
+
+@media (max-width: 768px) {
+  .card a {
+    font-size: 0.8em;
+  }
+
+  .card-box .card {
+    margin: 20px;
+  }
+}

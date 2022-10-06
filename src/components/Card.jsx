@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Loading from './Loading';
-import './Card.css';
+import '../styles/components/Card.css';
 
 export default class Card extends React.Component {
   render() {

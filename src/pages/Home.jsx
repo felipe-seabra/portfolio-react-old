@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/Home.css';
 
 export default class Main extends React.Component {
   render() {
     return (
-      <div className="background">
-        <div className="Main">
+      <div className="background-home">
+        <div className="title-home">
           <h4>Olá, meu nome é</h4>
           <h1>
             Felipe
