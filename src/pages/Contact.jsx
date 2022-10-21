@@ -50,7 +50,7 @@ export default class Contact extends React.Component {
   render() {
     const { name, email, message, sub } = this.state;
     return !sub ? (
-      <div className="background-color-grey mt-3">
+      <div className="background-color-grey">
         <h2 className="text-center mb-5 title-form">Formulário de contato</h2>
         <Form className="container form" onSubmit={ this.sendEmail }>
           <>

@@ -4,7 +4,7 @@ import '../styles/pages/Home.css';
 export default class Main extends React.Component {
   render() {
     return (
-      <div className="background-home">
+      <div className="background-home container-fluid">
         <div className="title-home">
           <h4>Olá, meu nome é</h4>
           <h1>
