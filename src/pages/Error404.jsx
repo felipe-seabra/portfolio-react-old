@@ -2,6 +2,10 @@ import React from 'react';
 import '../styles/pages/Error404.css';
 
 export default class Error404 extends React.Component {
+  componentDidMount() {
+    document.title = 'Page Not Found - Felipe Seabra';
+  }
+
   render() {
     return (
       <div className="background-color-grey">

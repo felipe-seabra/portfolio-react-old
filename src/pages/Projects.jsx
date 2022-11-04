@@ -9,6 +9,7 @@ export default class Projects extends React.Component {
   };
 
   componentDidMount() {
+    document.title = 'Projetos - Felipe Seabra';
     const num = 400;
     setTimeout(async () => {
       await this.setState({ isLoaded: true });

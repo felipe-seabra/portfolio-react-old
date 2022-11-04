@@ -3,7 +3,11 @@ import React from 'react';
 import image from '../images/image.jpg';
 import '../styles/pages/About.css';
 
-class About extends React.Component {
+export default class About extends React.Component {
+  componentDidMount() {
+    document.title = 'Sobre - Felipe Seabra';
+  }
+
   render() {
     const linkedin = 'https://www.linkedin.com/in/felipe-seabra';
 
@@ -41,5 +45,3 @@ class About extends React.Component {
     );
   }
 }
-
-export default About;

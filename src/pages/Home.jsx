@@ -2,6 +2,10 @@ import React from 'react';
 import '../styles/pages/Home.css';
 
 export default class Main extends React.Component {
+  componentDidMount() {
+    document.title = 'Felipe Seabra - Desenvolvedor Web';
+  }
+
   render() {
     return (
       <div className="background-home container-fluid">

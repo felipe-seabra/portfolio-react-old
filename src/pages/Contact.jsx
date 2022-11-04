@@ -16,6 +16,10 @@ export default class Contact extends React.Component {
     sub: false,
   };
 
+  componentDidMount() {
+    document.title = 'Contato - Felipe Seabra';
+  }
+
   handleChange = (event) => {
     const {
       target: { name, value },
