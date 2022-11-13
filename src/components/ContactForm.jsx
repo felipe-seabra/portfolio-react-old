@@ -33,7 +33,7 @@ export default function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('umbler', 'template_edakyz9', e.target, 'JKE2v70lnL5BfhRKv')
+    emailjs.sendForm('umbler', 'template_0s5hb6j', e.target, 'pQs69XqnkBggTWGIR')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -43,8 +43,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
-      <h2 className="color-text text-center mb-5 pt-4">Formulário de contato</h2>
+    <div className="background-color-grey mt-5">
+      <h2 className="text-white text-center mb-5 pt-4">Formulário de contato</h2>
       <Form className="container form" onSubmit={ sendEmail }>
         <>
           <FloatingLabel
