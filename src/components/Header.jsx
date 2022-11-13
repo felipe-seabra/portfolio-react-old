@@ -31,16 +31,6 @@ function Header() {
               Contato
             </Nav.Link>
           </Nav>
-          {/* <Navbar.Text>
-            <a
-              target="_blank"
-              className="btn d-none d-lg-block"
-              href={ linkedin }
-              rel="noreferrer"
-            >
-              Linkedin
-            </a>
-          </Navbar.Text> */}
         </Navbar.Collapse>
       </Navbar>
     </header>
