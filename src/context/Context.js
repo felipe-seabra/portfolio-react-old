@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 export const Context = createContext();
 
 function ContextProvider({ children }) {
-  const [sub, setSub] = useState(false);
+  const [sumitForm, setSumitForm] = useState(false);
 
   const contextValue = useMemo(() => ({
-    sub,
-    setSub,
-  }), [sub]);
+    sumitForm,
+    setSumitForm,
+  }), [sumitForm]);
 
   return (
     <Context.Provider value={ contextValue }>
