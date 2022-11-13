@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import { Context } from '../context/Context';
+import Context from '../context/Context';
 import '../styles/index.css';
 import '../styles/pages/Contact.css';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import CookieConsent from 'react-cookie-consent';
-import ContextProvider from './context/Context';
+import ContextProvider from './context/ContextProvider';
 import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
