@@ -6,8 +6,16 @@ import shoppingCart from '../images/projects/background-shopping-cart.png';
 import trybewarts from '../images/projects/background-project-trybewarts.png';
 import trybewallet from '../images/projects/background-trybewallet.png';
 import trivia from '../images/projects/background-trivia.png';
+import recipeApp from '../images/projects/background-recipe-app.png';
 
 const data = [
+  {
+    name: 'Recipe App',
+    image: recipeApp,
+    description:
+      'Projeto de desenvolvimento de um App de Receitas com filtros de busca e algumas funcionalidades. 🧑‍🍳 🍲 🍰 🥐',
+    url: 'https://github.com/felipe-seabra/Trybe-project-recipes-app',
+  },
   {
     name: 'Trivia',
     image: trivia,
