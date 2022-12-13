@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
-import ContactForm from '../components/ContactForm';
-import AlertContactSucess from '../components/AlertContactSucess';
-import Context from '../context/Context';
+import ContactForm from '../../components/ContactForm';
+import AlertContactSucess from '../../components/AlertContactSucess';
+import Context from '../../context/Context';
 
 export default function Contact() {
   const { sumitForm } = useContext(Context);
