@@ -3,9 +3,9 @@ import emailjs from '@emailjs/browser';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Context from '../context/Context';
-import '../styles/index.css';
-import '../pages/Contact/style/Contact.css';
+import Context from '../../context/Context';
+import '../../styles/index.css';
+import './style/ContactForm.css';
 
 export default function ContactForm() {
   const { setSumitForm } = useContext(Context);

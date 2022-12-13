@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Loading from './Loading';
-import '../styles/components/Card.css';
+import Loading from '../Loading';
+import './style/Card.css';
 
 export default class Card extends React.Component {
   render() {
@@ -28,9 +28,9 @@ export default class Card extends React.Component {
 }
 
 Card.propTypes = {
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  isLoaded: PropTypes.bool.isRequired,
-};
+  name: PropTypes.string,
+  image: PropTypes.string,
+  description: PropTypes.string,
+  url: PropTypes.string,
+  isLoaded: PropTypes.bool,
+}.isRequired;

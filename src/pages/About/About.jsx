@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-max-depth */
 import React from 'react';
-import image from '../../images/image.jpg';
+import profile from '../../images/profile.jpg';
 import './style/About.css';
 
 export default class About extends React.Component {
@@ -17,7 +17,7 @@ export default class About extends React.Component {
           <div className="about row">
             <img
               className="about-picture img-fluid"
-              src={ image }
+              src={ profile }
               alt="Foto Felipe Seabra"
             />
             <div className="about-text mt-3">

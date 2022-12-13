@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../styles/index.css';
-import '../styles/components/Header.css';
+import '../../styles/index.css';
+import './style/Header.css';
 
 function Header() {
   // const linkedin = 'https://www.linkedin.com/in/felipe-seabra';
