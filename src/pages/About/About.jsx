@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-max-depth */
 import React from 'react';
-import image from '../images/image.jpg';
-import '../styles/pages/About.css';
+import image from '../../images/image.jpg';
+import './style/About.css';
 
 export default class About extends React.Component {
   componentDidMount() {

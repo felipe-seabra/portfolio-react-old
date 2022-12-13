@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/pages/Home.css';
+import './style/Home.css';
 
 export default class Main extends React.Component {
   componentDidMount() {

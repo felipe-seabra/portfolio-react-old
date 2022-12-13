@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/pages/Projects.css';
-import Card from '../components/Card';
-import data from '../data';
+import './style/Projects.css';
+import Card from '../../components/Card';
+import data from '../../data';
 
 export default class Projects extends React.Component {
   state = {

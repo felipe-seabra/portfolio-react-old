@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 import '../styles/index.css';
-import '../styles/pages/Contact.css';
+import '../pages/Contact/style/Contact.css';
 
 export default class AlertContactSucess extends Component {
   render() {
