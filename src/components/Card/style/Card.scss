@@ -1,0 +1,42 @@
+$backgroundColor: #101010;
+
+.card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+  background: $backgroundColor;
+  transition: 0.4s ease;
+  height: 365px;
+  width: 335px;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  img {
+    max-width: 105%;
+    max-height: 135px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    color: white;
+    margin: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .card a {
+      font-size: 0.8em;
+    }
+
+    .card-box .card {
+      margin: 20px;
+    }
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
