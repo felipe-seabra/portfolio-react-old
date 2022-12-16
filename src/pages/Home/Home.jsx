@@ -16,13 +16,12 @@ export default function Main() {
           <span id="animate-flicker">|</span>
         </h1>
         <h3>
-          Sou estudante de desenvolvimento web na
-          {' '}
-          <strong>
+          Desenvolvedor Front-End
+          {/* <strong>
             <a className="trybe" href="https://www.betrybe.com/" target="_blank" rel="noreferrer" style={ { textDecoration: 'none' } }>
               Trybe
             </a>
-          </strong>
+          </strong> */}
           .
         </h3>
       </div>
