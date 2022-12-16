@@ -6,15 +6,15 @@ import './style/Card.scss';
 function Card(props) {
   const { name, image, description, url, isLoaded } = props;
   return (
-    <div className="card">
+    <div id="card">
       {!isLoaded ? (
         <Loading />
       ) : (
         <div>
-          <img className="card-img-top" src={ image } alt={ name } />
+          <img src={ image } alt={ name } />
           <div className="card-body">
-            <h3 className="card-title">{name}</h3>
-            <p className="card-text">{description}</p>
+            <h3>{name}</h3>
+            <p>{description}</p>
             <a href={ url } target="_blank" className="btn mt-2" rel="noreferrer">
               Visitar Repositório
             </a>
