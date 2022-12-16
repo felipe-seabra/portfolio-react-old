@@ -8,7 +8,7 @@ export default function Projects() {
 
   useEffect(() => {
     document.title = 'Projetos - Felipe Seabra';
-    const num = 400;
+    const num = 800;
     setTimeout(() => {
       setIsLoaded(true);
     }, num);
