@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/Footer.css';
+import './style/Footer.scss';
 
 function Footer() {
   const instagram = 'https://www.instagram.com/felipeseabra_';
