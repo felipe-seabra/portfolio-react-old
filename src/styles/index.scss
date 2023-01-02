@@ -1,0 +1,62 @@
+$primaryColor: #dc143c;
+$secondaryColor: #fff;
+$backgroundColor: #191919;
+$fontFamily: 'Josefin Sans', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: $fontFamily;
+}
+
+.background-color-grey {
+  background-color: $backgroundColor;
+  width: 100%;
+  min-height: 89.4vh;
+  padding: 100px 0px;
+}
+
+span {
+  color: $primaryColor;
+}
+
+h1 {
+  color: $secondaryColor;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+
+h4 {
+  color: $secondaryColor;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+h3 {
+  color: $secondaryColor;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  background-color: $primaryColor !important;
+  color: $secondaryColor !important;
+  text-decoration: none !important;
+  border: 2px solid transparent !important;
+  font-weight: bold !important;
+  padding: 10px 25px !important;
+  border-radius: 25px !important;
+  transition: transform 0.4s !important;
+}
+
+.btn:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 40%;
+}
