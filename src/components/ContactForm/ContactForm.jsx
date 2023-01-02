@@ -4,8 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Context from '../../context/Context';
-import '../../styles/index.css';
-import './style/ContactForm.css';
+import './style/ContactForm.scss';
 
 export default function ContactForm() {
   const { setSumitForm } = useContext(Context);
@@ -43,9 +42,9 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="background-color-grey mt-5">
-      <h2 className="text-white text-center mb-5 pt-4">Formulário de contato</h2>
+    <div className="background-color-grey mt-4">
       <Form className="container form" onSubmit={ sendEmail }>
+        <h2 className="form__text text-center mb-5 pt-4">Formulário de contato</h2>
         <>
           <FloatingLabel
             controlId="floatingInput"
@@ -61,7 +60,11 @@ export default function ContactForm() {
               required
             />
           </FloatingLabel>
-          <FloatingLabel controlId="floatingInput" label="E-mail" className="mb-3">
+          <FloatingLabel
+            controlId="floatingInput"
+            label="E-mail"
+            className="mb-3"
+          >
             <Form.Control
               type="email"
               placeholder="name@example.com"

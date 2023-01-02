@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './style/Home.css';
+import './style/Home.scss';
 
 export default function Main() {
   useEffect(() => {
@@ -7,8 +7,8 @@ export default function Main() {
   }, []);
 
   return (
-    <div className="background-home container-fluid">
-      <div className="title-home">
+    <div className="home">
+      <div className="home__title">
         <h4>Olá, meu nome é</h4>
         <h1>
           Felipe
@@ -17,13 +17,7 @@ export default function Main() {
           <span id="animate-flicker">|</span>
         </h1>
         <h3>
-          Desenvolvedor Front-End
-          {/* <strong>
-            <a className="trybe" href="https://www.betrybe.com/" target="_blank" rel="noreferrer" style={ { textDecoration: 'none' } }>
-              Trybe
-            </a>
-          </strong> */}
-          .
+          Desenvolvedor Front-End.
         </h3>
       </div>
     </div>

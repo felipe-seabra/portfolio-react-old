@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../../styles/index.css';
 import './style/Header.css';
 
 function Header() {
