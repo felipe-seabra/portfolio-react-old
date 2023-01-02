@@ -8,11 +8,11 @@ export default function Projects() {
 
   useEffect(() => {
     document.title = 'Projetos - Felipe Seabra';
-    const num = 800;
+    const TOMEOUT_LIMIT = 800;
     setTimeout(() => {
       setIsLoaded(true);
-    }, num);
-  });
+    }, TOMEOUT_LIMIT);
+  }, []);
 
   return (
     <div className="background-color-grey container-fluid">

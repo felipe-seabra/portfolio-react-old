@@ -8,7 +8,7 @@ export default function About() {
 
   useEffect(() => {
     document.title = 'Sobre - Felipe Seabra';
-  });
+  }, []);
 
   return (
     <section className="background-color-grey">

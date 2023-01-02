@@ -4,7 +4,8 @@ import './style/Home.css';
 export default function Main() {
   useEffect(() => {
     document.title = 'Felipe Seabra - Desenvolvedor Web';
-  });
+  }, []);
+
   return (
     <div className="background-home container-fluid">
       <div className="title-home">
