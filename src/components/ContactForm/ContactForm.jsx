@@ -44,7 +44,7 @@ export default function ContactForm() {
   return (
     <div className="background-color-grey mt-4">
       <Form className="container form" onSubmit={ sendEmail }>
-        <h2 className="form__text text-center mb-5 pt-4">Formulário de contato</h2>
+        <h2 className="form__text text-center mb-5 pt-4">Formulário de Contato</h2>
         <>
           <FloatingLabel
             controlId="floatingInput"
