@@ -4,7 +4,7 @@ import './style/Error404.css';
 export default function Error404() {
   useEffect(() => {
     document.title = 'Page Not Found - Felipe Seabra';
-  });
+  }, []);
 
   return (
     <div className="background-color-grey">

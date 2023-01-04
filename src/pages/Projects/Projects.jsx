@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './style/Projects.css';
+import './style/Projects.scss';
 import Card from '../../components/Card';
 import data from '../../data';
 
@@ -8,18 +8,18 @@ export default function Projects() {
 
   useEffect(() => {
     document.title = 'Projetos - Felipe Seabra';
-    const num = 800;
+    const TOMEOUT_LIMIT = 800;
     setTimeout(() => {
       setIsLoaded(true);
-    }, num);
-  });
+    }, TOMEOUT_LIMIT);
+  }, []);
 
   return (
-    <div className="background-color-grey container-fluid">
-      <div className="title">
+    <div className="background-color-grey projects">
+      <div className="projects__title">
         <h2>Meus Projetos</h2>
       </div>
-      <div className="card-box">
+      <div className="projects__card-box">
         {data.length < 1
           ? <p>Nenhum projeto encontrado</p>
           : data.map((card) => (

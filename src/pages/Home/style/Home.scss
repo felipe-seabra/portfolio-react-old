@@ -1,32 +1,23 @@
-.background-home {
+.home {
   display: flex;
   background-image: url(../../../images/background-main.png);
   background-size: cover;
   background-position: center;
-  height: 89.3vh;
+  height: 89.4vh;
   width: 100%;
   background-attachment: fixed;
-}
 
-.title-home {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
 }
 
 #animate-flicker {
   margin-left: 1vw;
   color: #fff;
-}
-
-.trybe {
-  text-decoration: none;
-  color: #2fc18c;
-}
-
-.trybe:hover {
-  color: #036b52;
 }
 
 @keyframes is-rotating {
