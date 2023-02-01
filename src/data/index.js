@@ -13,7 +13,7 @@ const data = [
     name: 'Recipe App',
     image: recipeApp,
     description:
-      'Projeto de desenvolvimento de um App de Receitas com filtros de busca e algumas funcionalidades. 🧑‍🍳 🍲 🍰 🥐',
+      'Projeto de desenvolvimento de um App de Receitas com filtros de busca e algumas funcionalidades. 🧑‍🍳 🍲 🍰 ',
     url: 'https://github.com/felipe-seabra/Trybe-project-recipes-app',
   },
   {

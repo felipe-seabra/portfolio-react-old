@@ -9,7 +9,7 @@ function Header() {
     <header className="header fixed-top">
       <Navbar collapseOnSelect className="container" expand="md">
         <Navbar.Brand>
-          <Link to="/" className="header__logo" style={ { textDecoration: 'none' } }>
+          <Link to="/" className="header__logo">
             Portfó
             <span>lio</span>
           </Link>

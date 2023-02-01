@@ -15,6 +15,11 @@ $secondaryColor: #fff;
     font-size: 35px;
     cursor: pointer;
     letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+  &__logo:hover {
+    color: $secondaryColor;
   }
 
   &__links {
