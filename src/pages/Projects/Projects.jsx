@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style/Projects.scss';
-import Card from '../../components/Card';
+import { Card } from '../../components';
 import data from '../../data';
 
 export default function Projects() {

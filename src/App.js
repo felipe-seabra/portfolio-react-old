@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import ContextProvider from './context/ContextProvider';
-import Header from './components/Header';
-import CookieConsentComponent from './components/CookieConsentComponent';
 import Content from './components/Content';
-import Footer from './components/Footer';
-import Background from './components/Background';
+import {
+  Header,
+  CookieConsentComponent,
+  Footer,
+  Background,
+} from './components';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
