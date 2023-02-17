@@ -1,21 +1,22 @@
-/* eslint-disable react/jsx-max-depth */
 import React, { useEffect } from 'react';
-import profile from '../../images/profile.jpg';
+import profileImg from '../../images/profile.jpg';
 import './style/About.scss';
 
-export default function About() {
-  const URL_LINKEDIN = 'https://www.linkedin.com/in/felipe-seabra';
+const URL_LINKEDIN = 'https://www.linkedin.com/in/felipe-seabra';
 
-  useEffect(() => {
+export default function About() {
+  function setPageTitle() {
     document.title = 'Sobre - Felipe Seabra';
-  }, []);
+  }
+
+  useEffect(setPageTitle, []);
 
   return (
     <section className="background-color-grey">
-      <div className="about container mt-5">
+      <div className="container mt-5 about">
         <img
-          className="about__picture img-fluid"
-          src={ profile }
+          className="img-fluid about__picture"
+          src={ profileImg }
           alt="Foto Felipe Seabra"
         />
         <div className="about__text mt-3">
@@ -28,15 +29,12 @@ export default function About() {
             Apesar de hoje me identificar mais com o
             {' '}
             <strong>Front-end</strong>
-            , vejo que não há nada que eu não consiga
-            {' '}
-            <em>fazer/aprender</em>
-            .
+            , acredito que com esforço e dedicação eu posso aprender qualquer coisa.
           </p>
           <a
             className="btn"
-            target="_blank"
             href={ URL_LINKEDIN }
+            target="_blank"
             rel="noreferrer"
           >
             Vamos conversar
