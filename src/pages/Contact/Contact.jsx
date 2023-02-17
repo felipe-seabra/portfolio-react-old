@@ -1,12 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import Context from '../../context/Context';
-import { ContactForm, AlertContactSucess } from '../../components';
+import { ContactForm, AlertContactSuccess } from '../../components';
 
 export default function Contact() {
-  const { sumitForm } = useContext(Context);
-  useEffect(() => {
-    document.title = 'Contato - Felipe Seabra';
-  }, []);
+  const { submitForm } = useContext(Context);
 
-  return !sumitForm ? <ContactForm /> : <AlertContactSucess />;
+  function setPageTitle() {
+    document.title = 'Contato - Felipe Seabra';
+  }
+
+  useEffect(setPageTitle, []);
+
+  return submitForm ? <AlertContactSuccess /> : <ContactForm />;
 }

@@ -1,5 +1,5 @@
 import CookieConsentComponent from './CookieConsentComponent';
-import AlertContactSucess from './AlertContactSucess';
+import AlertContactSuccess from './AlertContactSuccess';
 import Background from './Background';
 import Card from './Card';
 import ContactForm from './ContactForm';
@@ -9,7 +9,7 @@ import Loading from './Loading';
 
 export {
   CookieConsentComponent,
-  AlertContactSucess,
+  AlertContactSuccess,
   Background,
   Card,
   ContactForm,
