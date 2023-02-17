@@ -3,8 +3,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './style/Header.scss';
 
+const NAV_LINKS = [
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'Sobre' },
+  { path: '/projects', label: 'Projetos' },
+  { path: '/contact', label: 'Contato' },
+];
+
 function Header() {
-  // const linkedin = 'https://www.linkedin.com/in/felipe-seabra';
   return (
     <header className="header fixed-top">
       <Navbar collapseOnSelect className="container" expand="md">
@@ -17,18 +23,17 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse navbar id="responsive-navbar-nav">
           <Nav className="container me-auto header__links">
-            <Nav.Link as={ Link } to="/" href="/" className="navlink">
-              Home
-            </Nav.Link>
-            <Nav.Link as={ Link } to="/about" href="/about" className="navlink">
-              Sobre
-            </Nav.Link>
-            <Nav.Link as={ Link } to="/projects" href="/projects" className="navlink">
-              Projetos
-            </Nav.Link>
-            <Nav.Link as={ Link } to="/contact" href="/contact" className="navlink">
-              Contato
-            </Nav.Link>
+            {NAV_LINKS.map((link, index) => (
+              <Nav.Link
+                key={ index }
+                as={ Link }
+                to={ link.path }
+                href={ link.path }
+                className="navlink"
+              >
+                {link.label}
+              </Nav.Link>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
