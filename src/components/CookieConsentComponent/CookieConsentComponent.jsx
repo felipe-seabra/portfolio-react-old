@@ -1,16 +1,17 @@
 import React from 'react';
 import CookieConsent from 'react-cookie-consent';
 
+const COOKIE_STYLE = {
+  background: '#000',
+  textAlign: 'left',
+  fontSize: '16px',
+  padding: '20px',
+};
+
 function CookieConsentComponent() {
   return (
     <CookieConsent
-      // debug
-      style={
-        { background: '#000',
-          textAlign: 'left',
-          fontSize: '16px',
-          padding: '20px' }
-      }
+      style={ COOKIE_STYLE }
       buttonText="Aceitar"
       expires={ 30 }
       buttonClasses="btn"
