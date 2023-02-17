@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './style/Projects.scss';
 import { Card } from '../../components';
+import setPageTitle from '../../utils/setPageTitle';
 import data from '../../data';
 
 export default function Projects() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    document.title = 'Projetos - Felipe Seabra';
+    setPageTitle('Projetos - Felipe Seabra');
     const TOMEOUT_LIMIT = 800;
     setTimeout(() => {
       setIsLoaded(true);

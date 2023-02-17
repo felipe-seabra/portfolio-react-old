@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
+import setPageTitle from '../../utils/setPageTitle';
 import './style/Error404.css';
 
 export default function Error404() {
   useEffect(() => {
-    document.title = 'Page Not Found - Felipe Seabra';
+    setPageTitle('Page Not Found - Felipe Seabra');
   }, []);
 
   return (

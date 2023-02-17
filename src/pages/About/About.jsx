@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 import profileImg from '../../images/profile.jpg';
+import setPageTitle from '../../utils/setPageTitle';
 import './style/About.scss';
 
 const URL_LINKEDIN = 'https://www.linkedin.com/in/felipe-seabra';
 
 export default function About() {
-  function setPageTitle() {
-    document.title = 'Sobre - Felipe Seabra';
-  }
-
-  useEffect(setPageTitle, []);
+  useEffect(() => {
+    setPageTitle('Sobre - Felipe Seabra');
+  }, []);
 
   return (
     <section className="background-color-grey">
