@@ -2,9 +2,12 @@ import React, { useEffect } from 'react';
 import './style/Home.scss';
 
 export default function Main() {
-  useEffect(() => {
-    document.title = 'Felipe Seabra - Desenvolvedor Web';
-  }, []);
+  function setPageTitle() {
+    const title = 'Felipe Seabra - Desenvolvedor Web';
+    document.title = title;
+  }
+
+  useEffect(setPageTitle, []);
 
   return (
     <div className="home">
@@ -16,9 +19,7 @@ export default function Main() {
           <span>Seabra</span>
           <span id="animate-flicker">|</span>
         </h1>
-        <h3>
-          Desenvolvedor Front-End.
-        </h3>
+        <h3>Desenvolvedor Front-End.</h3>
       </div>
     </div>
   );
