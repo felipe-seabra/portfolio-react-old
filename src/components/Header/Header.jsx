@@ -16,8 +16,8 @@ function Header() {
       <Navbar collapseOnSelect className="container" expand="md">
         <Navbar.Brand>
           <Link to="/" className="header__logo">
-            Portfó
-            <span>lio</span>
+            Felipe
+            <span> Seabra</span>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
