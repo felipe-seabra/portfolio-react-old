@@ -5,7 +5,7 @@ import setPageTitle from '../../utils/setPageTitle';
 import './style/About.scss';
 
 const TEXTS = [
-  `Olá, eu sou Felipe, tenho mais de 10 anos de experiência na área de tecnologia educacional. 
+  `Tenho mais de 10 anos de experiência na área de tecnologia educacional. 
 Estou me especializando em Desenvolvimento Web Full-Stack na Trybe, com grande interesse em Front-End. 
 Sempre atualizado com as últimas tendências, adoro colaborar e aprender com os outros.`,
 
