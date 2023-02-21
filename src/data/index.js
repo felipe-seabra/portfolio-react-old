@@ -7,8 +7,16 @@ import trybewartsImg from '../images/projects/background-project-trybewarts.png'
 import trybewalletImg from '../images/projects/background-trybewallet.png';
 import triviaImg from '../images/projects/background-trivia.png';
 import recipeAppImg from '../images/projects/background-recipe-app.png';
+import nodeJsImg from '../images/projects/background-nodejs.png';
 
 const data = [
+  {
+    name: 'Blog API',
+    image: nodeJsImg,
+    description:
+      'Projeto individual de back end utilizando Node.js, Express e Sequelize 👨‍💻',
+    url: 'https://github.com/felipe-seabra/Trybe-project-blogs-api',
+  },
   {
     name: 'Recipe App',
     image: recipeAppImg,
