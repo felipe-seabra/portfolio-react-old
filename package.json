@@ -20,13 +20,27 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "eject": "react-scripts eject",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test-coverage": "react-scripts test --coverage --watchAll=false",
+    "eslint": "npx stylelint '**/*.css' --fix",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/index.js",
+      "serviceWorker.js",
+      "reportWebVitals.js",
+      "src/fakes",
+      "src/routes",
+      "src/hooks",
+      "src/tests"
+    ]
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "trybe-frontend"
     ]
   },
   "browserslist": {
@@ -42,17 +56,15 @@
     ]
   },
   "devDependencies": {
-    "eslint": "8.20.0",
-    "eslint-config-airbnb": "19.0.4",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jsx-a11y": "6.6.1",
-    "eslint-plugin-react": "7.30.1",
-    "eslint-plugin-react-func": "0.1.18",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-react-redux": "4.0.0",
-    "eslint-plugin-sonarjs": "0.14.0"
-  },
-  "lint": "eslint .",
-  "lint:fix": "eslint --fix",
-  "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-trybe-frontend": "^1.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-func": "^0.1.18",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-redux": "^4.0.0",
+    "eslint-plugin-sonarjs": "^0.18.0"
+  }
 }
