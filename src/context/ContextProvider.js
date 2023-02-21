@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import Context from './Context';
 
 function ContextProvider({ children }) {
-  const [sumitForm, setSumitForm] = useState(false);
+  const [submitForm, setSubmitForm] = useState(false);
 
   const contextValue = useMemo(() => ({
-    sumitForm,
-    setSumitForm,
-  }), [sumitForm]);
+    submitForm,
+    setSubmitForm,
+  }), [submitForm]);
 
   return (
     <Context.Provider value={ contextValue }>

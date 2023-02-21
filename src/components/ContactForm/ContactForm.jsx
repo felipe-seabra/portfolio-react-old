@@ -7,7 +7,7 @@ import Context from '../../context/Context';
 import './style/ContactForm.scss';
 
 export default function ContactForm() {
-  const { setSumitForm } = useContext(Context);
+  const { setSubmitForm } = useContext(Context);
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -27,7 +27,7 @@ export default function ContactForm() {
   };
 
   const handleFormSubmit = () => {
-    setSumitForm(true);
+    setSubmitForm(true);
   };
 
   const sendEmail = (e) => {
