@@ -47,3 +47,4 @@ Para fazer o deploy desse projeto rode
   npm run deploy
 ```
 
+© Desenvolvido por [Felipe Seabra](https://www.linkedin.com/in/felipe-seabra/) 
