@@ -1,7 +1,17 @@
+/* eslint-disable max-len */
 import React, { useEffect } from 'react';
 import profileImg from '../../images/profile.jpg';
 import setPageTitle from '../../utils/setPageTitle';
 import './style/About.scss';
+
+const TEXTS = [
+  `Olá, eu sou Felipe, tenho mais de 10 anos de experiência na área de tecnologia educacional. 
+Estou me especializando em Desenvolvimento Web Full-Stack na Trybe, com grande interesse em Front-End. 
+Sempre atualizado com as últimas tendências, adoro colaborar e aprender com os outros.`,
+
+  `Se você tiver interesse em tecnologia ou projetos desafiadores, 
+por favor, entre em contato. Será um prazer conversar com você.`,
+];
 
 const URL_LINKEDIN = 'https://www.linkedin.com/in/felipe-seabra';
 
@@ -21,14 +31,10 @@ export default function About() {
         <div className="about__text mt-3">
           <h2>Sobre Mim</h2>
           <p>
-            Natural de Presidente Prudente (SP), tenho aproximadamente 10 anos de
-            experiência atuando em diversas áreas de tecnologia em educação.
+            {TEXTS[0]}
           </p>
           <p>
-            Apesar de hoje me identificar mais com o
-            {' '}
-            <strong>Front-end</strong>
-            , acredito que com esforço e dedicação eu posso aprender qualquer coisa.
+            {TEXTS[1]}
           </p>
           <a
             className="btn"
