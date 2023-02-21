@@ -8,7 +8,6 @@ export default function Contact() {
 
   useEffect(() => {
     setPageTitle('Contato - Felipe Seabra');
-    console.log(submitForm);
   }, []);
 
   return submitForm ? <AlertContactSuccess /> : <ContactForm />;
