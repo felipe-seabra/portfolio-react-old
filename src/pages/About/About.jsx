@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React, { useEffect } from 'react';
-import profileImg from '../../images/profile.jpg';
+import { profileImg } from '../../images';
 import setPageTitle from '../../utils/setPageTitle';
 import './style/About.scss';
 
