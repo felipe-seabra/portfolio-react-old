@@ -19,6 +19,7 @@
   left: 0;
   background: #191919;
   overflow: hidden;
+  opacity: 0.3;
 }
 .background li {
   position: fixed;
