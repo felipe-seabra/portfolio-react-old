@@ -2,31 +2,46 @@ import React, { useState, useEffect } from 'react';
 import './style/Projects.scss';
 import { Card } from '../../components';
 import setPageTitle from '../../utils/setPageTitle';
-import data from '../../data';
+import fetchGithubApi from '../../utils/fetch';
 
 export default function Projects() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [repos, setRepos] = useState([]);
+  const urlToFetch = 'https://api.github.com/users/felipe-seabra/repos';
 
   useEffect(() => {
-    setPageTitle('Projetos - Felipe Seabra');
+    async function fetchData() {
+      try {
+        const repositories = await fetchGithubApi(urlToFetch);
+        if (repositories) {
+          const filteredRepositories = repositories
+            .filter((repo) => !repo.name.startsWith('felipe'));
+          setRepos(filteredRepositories);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
     const TIMEOUT_LIMIT = 800;
     const timeoutId = setTimeout(() => setIsLoaded(true), TIMEOUT_LIMIT);
 
+    setPageTitle('Projetos - Felipe Seabra');
+    fetchData();
+
     return () => clearTimeout(timeoutId);
-  }, []);
+  }, [urlToFetch]);
 
   const renderCards = () => {
-    if (data.length < 1) {
+    if (repos.length < 1) {
       return <p>Nenhum projeto encontrado</p>;
     }
 
-    return data.map((card) => (
+    return repos.map((card) => (
       <Card
-        key={ card.name }
-        image={ card.image }
+        key={ card.id }
         name={ card.name }
         description={ card.description }
-        url={ card.url }
         isLoaded={ isLoaded }
       />
     ));
