@@ -2,13 +2,26 @@ import React, { useState, useEffect } from 'react';
 import './style/Projects.scss';
 import { Card } from '../../components';
 import setPageTitle from '../../utils/setPageTitle';
-import data from '../../data';
+import fetchGithubApi from '../../utils/fetch';
 
 export default function Projects() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    setPageTitle('Projetos - Felipe Seabra');
+    async function fetchData() {
+      setPageTitle('Projetos - Felipe Seabra');
+
+      const repositories = await fetchGithubApi('repos');
+
+      const filteredRepositories = repositories
+        .filter((repo) => !repo.name.startsWith('felipe'));
+
+      setRepos(filteredRepositories);
+    }
+
+    fetchData();
+
     const TIMEOUT_LIMIT = 800;
     const timeoutId = setTimeout(() => setIsLoaded(true), TIMEOUT_LIMIT);
 
@@ -16,17 +29,15 @@ export default function Projects() {
   }, []);
 
   const renderCards = () => {
-    if (data.length < 1) {
+    if (repos.length < 1) {
       return <p>Nenhum projeto encontrado</p>;
     }
 
-    return data.map((card) => (
+    return repos.map((card) => (
       <Card
-        key={ card.name }
-        image={ card.image }
+        key={ card.id }
         name={ card.name }
         description={ card.description }
-        url={ card.url }
         isLoaded={ isLoaded }
       />
     ));
