@@ -31,6 +31,16 @@ $backgroundColor: #101010;
     margin: 5px;
   }
 
+  .show-more {
+    appearance: none;
+    background-color: $backgroundColor;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
   @media (max-width: 768px) {
     #card {
       margin: 20px;
@@ -38,7 +48,6 @@ $backgroundColor: #101010;
         font-size: 0.8em;
       }
     }
-
   }
 }
 
