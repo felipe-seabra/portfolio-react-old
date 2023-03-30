@@ -1,6 +1,11 @@
-const fetchGithubApi = async (query) => {
-  const data = await fetch(`https://api.github.com/users/felipe-seabra/${query}`)
-    .then((response) => response.json());
-  return data;
+const fetchGithubApi = async (url) => {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    return ({ message: error });
+  }
 };
+
 export default fetchGithubApi;

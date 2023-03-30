@@ -7,26 +7,30 @@ import fetchGithubApi from '../../utils/fetch';
 export default function Projects() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [repos, setRepos] = useState([]);
+  const urlToFetch = 'https://api.github.com/users/felipe-seabra/repos';
 
   useEffect(() => {
     async function fetchData() {
-      setPageTitle('Projetos - Felipe Seabra');
-
-      const repositories = await fetchGithubApi('repos');
-
-      const filteredRepositories = repositories
-        .filter((repo) => !repo.name.startsWith('felipe'));
-
-      setRepos(filteredRepositories);
+      try {
+        const repositories = await fetchGithubApi(urlToFetch);
+        if (repositories) {
+          const filteredRepositories = repositories
+            .filter((repo) => !repo.name.startsWith('felipe'));
+          setRepos(filteredRepositories);
+        }
+      } catch (err) {
+        console.error(err);
+      }
     }
-
-    fetchData();
 
     const TIMEOUT_LIMIT = 800;
     const timeoutId = setTimeout(() => setIsLoaded(true), TIMEOUT_LIMIT);
 
+    setPageTitle('Projetos - Felipe Seabra');
+    fetchData();
+
     return () => clearTimeout(timeoutId);
-  }, []);
+  }, [urlToFetch]);
 
   const renderCards = () => {
     if (repos.length < 1) {
