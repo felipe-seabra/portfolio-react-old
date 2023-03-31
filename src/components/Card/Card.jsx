@@ -15,7 +15,7 @@ function Card({ name, description, isLoaded }) {
   const URL = `https://github.com/felipe-seabra/${name}`;
   const URL_FETCH_IMAGE = `https://api.github.com/repos/felipe-seabra/${name}/contents/images/demo.png`;
 
-  const newName = name.replace(/^trybe-/i, '')
+  const newName = name.replace(/^trybe-project/i, '')
     .replace(/-/g, ' ')
     .replace(/(^|\s)\S/g, (firstLetter) => firstLetter.toUpperCase());
 
