@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style/Projects.scss';
-import { Card } from '../../components';
+import { Card, Loading } from '../../components';
 import setPageTitle from '../../utils/setPageTitle';
 import fetchGithubApi from '../../utils/fetch';
 
@@ -34,7 +34,7 @@ export default function Projects() {
 
   const renderCards = () => {
     if (repos.length < 1) {
-      return <p>Nenhum projeto encontrado</p>;
+      return <Loading />;
     }
 
     return repos.map((card) => (
