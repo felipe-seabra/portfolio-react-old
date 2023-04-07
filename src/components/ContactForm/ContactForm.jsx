@@ -42,7 +42,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="background-color-grey mt-4">
+    <div className="background-color-grey">
       <Form className="container form" onSubmit={ sendEmail }>
         <h2 className="form__text text-center mb-5 pt-4">Formulário de Contato</h2>
         <>
