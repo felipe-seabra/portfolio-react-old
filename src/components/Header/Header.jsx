@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './style/Header.scss';
@@ -11,6 +12,13 @@ const NAV_LINKS = [
 ];
 
 function Header() {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState('/');
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
   return (
     <header className="header fixed-top">
       <Navbar collapseOnSelect className="container" expand="md">
@@ -28,8 +36,8 @@ function Header() {
                 key={ index }
                 as={ Link }
                 to={ link.path }
-                href={ link.path }
                 className="navlink"
+                active={ activeLink === link.path }
               >
                 {link.label}
               </Nav.Link>
