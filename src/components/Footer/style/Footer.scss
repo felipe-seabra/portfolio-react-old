@@ -12,10 +12,7 @@ footer {
 
   p {
     color: white;
-    font-size: 15px;
-    width: 100%px;
     text-align: center;
-    margin-top: 2px;
     letter-spacing: 1px;
     line-height: 23px;
   }
@@ -31,18 +28,17 @@ footer {
 
     a {
       background-color: $red;
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       padding: 15px;
       border-radius: 50%;
-      margin: 20px 10px 7px 0px;
+      margin: 20px 5px 7px 5px;
       color: #fff;
       text-decoration: none;
       font-size: 20px;
       align-items: center;
       display: flex;
       justify-content: center;
-      flex-direction: row;
       transition: transform 0.4s;
     }
 
