@@ -19,7 +19,7 @@ export default function Main() {
           <span>Seabra</span>
           <span id="animate-flicker">|</span>
         </h1>
-        <h3>Desenvolvedor Front-End.</h3>
+        <h3>Desenvolvedor Full-Stack.</h3>
       </div>
     </div>
   );
