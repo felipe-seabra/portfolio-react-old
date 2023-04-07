@@ -62,6 +62,17 @@ $secondaryColor: #fff;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
+  .navlink.active {
+    color: $primaryColor !important;
+    transform: scale(1.1);
+  }
+
+  .navlink.active:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }
 
 nav .navbar-toggler-icon {
