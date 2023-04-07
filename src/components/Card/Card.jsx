@@ -7,9 +7,10 @@ import fetchGithubApi from '../../utils/fetch';
 import { noImage } from '../../images';
 import './style/Card.scss';
 
-function Card({ name, description, isLoaded }) {
+function Card({ name, description }) {
   const [image, setImage] = useState('');
   const [showMore, setShowMore] = useState(false);
+  const [isLoadedImage, setIsLoadedImage] = useState(false);
 
   const MAX_LENGTH = 85;
   const URL = `https://github.com/felipe-seabra/${name}`;
@@ -24,9 +25,11 @@ function Card({ name, description, isLoaded }) {
       try {
         const data = await fetchGithubApi(URL_FETCH_IMAGE);
         setImage(!data.message ? data.download_url : noImage);
+        setIsLoadedImage(true);
       } catch (error) {
         console.error(error);
         setImage(noImage);
+        setIsLoadedImage(true);
       }
     }
 
@@ -41,7 +44,7 @@ function Card({ name, description, isLoaded }) {
 
   return (
     <div id="card">
-      {!isLoaded ? (
+      {!isLoadedImage ? (
         <Loading />
       ) : (
         <>
@@ -69,7 +72,6 @@ function Card({ name, description, isLoaded }) {
 Card.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  isLoaded: PropTypes.bool.isRequired,
 };
 
 export default Card;

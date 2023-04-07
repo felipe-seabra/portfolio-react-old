@@ -5,7 +5,6 @@ import setPageTitle from '../../utils/setPageTitle';
 import fetchGithubApi from '../../utils/fetch';
 
 export default function Projects() {
-  const [isLoaded, setIsLoaded] = useState(false);
   const [repos, setRepos] = useState([]);
   const urlToFetch = 'https://api.github.com/users/felipe-seabra/repos';
 
@@ -23,13 +22,8 @@ export default function Projects() {
       }
     }
 
-    const TIMEOUT_LIMIT = 800;
-    const timeoutId = setTimeout(() => setIsLoaded(true), TIMEOUT_LIMIT);
-
     setPageTitle('Projetos - Felipe Seabra');
     fetchData();
-
-    return () => clearTimeout(timeoutId);
   }, [urlToFetch]);
 
   const renderCards = () => {
@@ -42,7 +36,6 @@ export default function Projects() {
         key={ card.id }
         name={ card.name }
         description={ card.description }
-        isLoaded={ isLoaded }
       />
     ));
   };
