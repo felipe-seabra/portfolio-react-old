@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import './style/Projects.scss';
 import { Card, Loading } from '../../components';
 import setPageTitle from '../../utils/setPageTitle';
 import fetchGithubApi from '../../utils/fetch';
 
-export default function Projects() {
+function Projects() {
   const [repos, setRepos] = useState([]);
   const urlToFetch = 'https://api.github.com/users/felipe-seabra/repos';
 
@@ -49,3 +49,5 @@ export default function Projects() {
     </div>
   );
 }
+
+export default memo(Projects);

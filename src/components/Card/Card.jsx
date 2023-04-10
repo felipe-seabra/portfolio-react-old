@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable max-len */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import PropTypes from 'prop-types';
 import Loading from '../Loading';
 import fetchGithubApi from '../../utils/fetch';
@@ -74,4 +74,4 @@ Card.propTypes = {
   description: PropTypes.string.isRequired,
 };
 
-export default Card;
+export default memo(Card);
