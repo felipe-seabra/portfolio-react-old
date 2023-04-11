@@ -17,7 +17,7 @@ Projeto criado utilizando React.js
 Clone o projeto
 
 ```bash
-  git clone https://github.com/felipe-seabra/portfolio-react
+  git clone git@github.com:felipe-seabra/portfolio-react.git
 ```
 
 Entre no diretório do projeto
