@@ -48,3 +48,5 @@ Para fazer o deploy desse projeto rode
 ```
 
 © Desenvolvido por [Felipe Seabra](https://www.linkedin.com/in/felipe-seabra/) 
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
