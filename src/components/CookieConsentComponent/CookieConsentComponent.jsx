@@ -11,6 +11,7 @@ const COOKIE_STYLE = {
 function CookieConsentComponent() {
   return (
     <CookieConsent
+      cookieName="fSCookie"
       style={ COOKIE_STYLE }
       buttonText="Aceitar"
       expires={ 30 }
