@@ -14,10 +14,17 @@ const NAV_LINKS = [
 function Header() {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState('/');
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     setActiveLink(location.pathname);
   }, [location]);
+
+  const handleClick = () => {
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      setOpen(!open);
+    }
+  };
 
   return (
     <header className="header fixed-top">
@@ -28,8 +35,11 @@ function Header() {
             <span> Seabra</span>
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse navbar id="responsive-navbar-nav">
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={ () => setOpen(!open) }
+        />
+        <Navbar.Collapse in={ open } id="responsive-navbar-nav">
           <Nav className="container me-auto header__links">
             {NAV_LINKS.map((link, index) => (
               <Nav.Link
@@ -37,6 +47,7 @@ function Header() {
                 as={ Link }
                 to={ link.path }
                 className="navlink"
+                onClick={ handleClick }
                 active={ activeLink === link.path }
               >
                 {link.label}
