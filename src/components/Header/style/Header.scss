@@ -24,17 +24,15 @@ $secondaryColor: #fff;
 
   &__links {
     display: flex;
-    justify-content: right;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 
   .navlink {
     color: $secondaryColor !important;
     font-weight: bold;
-    text-transform: capitalize;
-    margin-left: 20px;
     text-transform: uppercase;
     transition: transform 0.4s;
-    text-align: end;
   }
 
   .navlink:hover {
